@@ -3,9 +3,13 @@
  */
 package Backend
 
-@SpringBootApplication
-class Application
+class App {
+    val greeting: String
+        get() {
+            return "Hello world."
+        }
+}
 
 fun main(args: Array<String>) {
-    SpringApplication.run(Application::class.java, *args)
+    println(App().greeting)
 }
